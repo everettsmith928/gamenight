@@ -38,7 +38,21 @@
   </header>
 
   <!-- SECTION -->
-  <main id="router-view">
+  <main class="container-fluid" id="router-view">
+    <section class="row" id="players">
+
+    </section>
+
+    <form onsubmit="app.PlayersController.addPlayer(newPlayer)">
+      <div>
+        <label for="name">Player Name:</label>
+        <input type="text" minlength="2" maxlength="15" name="name" required />
+      </div>
+      <div>
+        <button type="submit">Add Player</button>
+      </div>
+    </form>
+    </section>
     <!-- PRIMARY VIEWPORT -->
   </main>
 
